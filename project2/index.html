@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake & Apple Game</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #2c3e50, #4ca1af);
+            font-family: Arial, sans-serif;
+            color: white;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        canvas {
+            border: 10px solid #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            background: #222;
+            width: 600px;
+            height: 600px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            background: #fff;
+            color: #222;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        button:hover {
+            background: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 style="margin-top: -25px;">Snake & Apple Game</h1>
+        <canvas id="gameCanvas" width="600" height="600"></canvas>
+        <div id="buttonContainer">
+            <button id="playBtn" style="margin-top: 10px;">Play</button>
+            <button id="pauseBtn" style="margin-top: 10px;">Pause</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
